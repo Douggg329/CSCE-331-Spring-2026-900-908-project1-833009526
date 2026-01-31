@@ -189,3 +189,119 @@ h2{
 	height: auto;
 	
 }
+.body{
+	position: relative;
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.corkboard{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.resume{
+	position: absolute;
+	top: 100;
+	left: 800;
+	border: none;
+	box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+	background-color: white;
+}
+.sticky{
+	text-decoration: none;
+	color: #000;
+	background-color: #ffc;
+	display: block;
+	height: 14em;
+	width: 14em;
+	padding: 1em;
+	margin: 20px auto;
+	box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+.sticky h3{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em;
+	text-align: left;
+	font-size: 25;
+	margin: 0;
+	padding: 0;
+}
+.sticky p{
+	margin: 1em;
+	font-size: 14;
+	
+}
+.note1{
+	position: relative;
+	top:30;
+	left: 15;
+}
+
+.note2{
+	position: relative;
+	top: 30;
+}
+
+.note3{
+	position: relative;
+	top: 300;
+	left: -700;
+}
+.note4{
+	position: relative;
+	top:300;
+	left: -720;
+}
+
+.onboard{
+	position: relative;
+	top: 20;
+	margin: 40;
+	box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+.pin1{
+	position: relative;
+	top: 50;
+	left: 170;
+	z-index: 1;
+}
+.pin2{
+	position: relative;
+	top: 50;
+	left: 270;
+	z-index: 1;
+}
+.pin3{
+	position: relative;
+	top: 50;
+	left: 270;
+	z-index: 1;
+}
+
+.note5{
+	position: relative;
+	top: -30;
+	left: -20;
+}
+
+.note6{
+	position: relative;
+	top: -30;
+	left: -70;
+}
+
+.note7{
+	position: relative;
+	top: -30;
+	left: -10;
+}
