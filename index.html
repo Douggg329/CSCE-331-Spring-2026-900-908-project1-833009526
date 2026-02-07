@@ -4,7 +4,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Grant Duong</title>
-        <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" type="text/css" href="style.css" id="theme-link">
+
+        <script>
+            const themeLink = document.getElementById('theme-link');
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                themeLink.setAttribute('href', savedTheme);
+            }
+        
+            function switchTheme() {
+                let currentSheet = themeLink.getAttribute('href');
+                let nextSheet = (currentSheet === 'style.css') ? 'style2.css' : 'style.css';
+                
+                themeLink.setAttribute('href', nextSheet);
+                localStorage.setItem('theme', nextSheet);
+            }
+        </script>
     </head>
 <body>
     <div class = "topnav">
@@ -15,7 +31,10 @@
         <a href="genai.html">AI Page</a>
         <a href="https://www.linkedin.com/in/grant-duong-dfw">LinkedIn</a>
         <a href="https://github.com/Douggg329?tab=repositories">GitHub</a>
-        <img class = "Tamu" src = "Images/TAM-Stacked-Maroon.jpg">
+        <a button onclick="switchTheme()">Change Style</a>
+        <a href = "https://www.tamu.edu/" class="clickable-image-link">
+            <img class = "Tamu" src = "Images/TAM-Stacked-Maroon.jpg">
+        </a>
     </div>
     
     <div class = "Top">
@@ -28,9 +47,8 @@
     <div class = "bottom">
         <h2>Contact Infortmation</h2>
         <p class="text moved-contact">Phone: 720-829-7235</p>
-        <p class="text moved-contact">Email: Grantd729@gmail.com</p>
+        <p class="text moved-contact"><a href = "grantd729@gmail.com" target="_blank">Email: Grantd729@gmail.com</a></p>
     </div>
-
 
 
 </body>
